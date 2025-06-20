@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* Set global background color */
+@layer base {
+  body {
+    @apply bg-gray-100;
+  }
+}
