@@ -1,5 +1,6 @@
-const BASE_URL = "http://localhost:5000";
-
+const BASE_URL = import.meta.env.VITE_API_URL;
+//import.meta.env.VITE_API_URL;
+// "http://localhost:5000";
 export const GET = async (endpoint) => {
   const token = localStorage.getItem("token");
   const res = await fetch(BASE_URL + endpoint, {
